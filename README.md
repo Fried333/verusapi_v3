@@ -1,6 +1,6 @@
 # 🔍 Verus Ticker API
 
-**Version:** 2.0 | **Status:** ✅ Active | **Base URL:** http://localhost:8765
+**Version:** 3.0 | **Status:** ✅ Active | **Base URL:** http://localhost:8765
 
 A high-performance API for Verus blockchain trading pair data with multi-format endpoint support and intelligent caching.
 
@@ -21,6 +21,7 @@ A high-performance API for Verus blockchain trading pair data with multi-format 
 |----------|--------|-------------|
 | `/health` | GET | Server status, RPC connection, and cache information |
 | `/verussupply` | GET | Verus supply information |
+| `/stats` | GET | Coingecko format with USD Volume as HTML |
 
 ### ⚡ Cached Endpoints (60s TTL)
 
