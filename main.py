@@ -15,7 +15,6 @@ from datetime import datetime
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 from verussupply import get_vrsc_supply
 from dotenv import load_dotenv
 import uvicorn
@@ -69,8 +68,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mount static files
-app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Global exception handler
 @app.exception_handler(Exception)
